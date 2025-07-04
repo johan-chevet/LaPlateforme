@@ -1,0 +1,50 @@
+html {
+  font-family: monospace, sans-serif;
+}
+.Johan {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 50%;
+}
+.Karim {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 50%;
+}
+.Rayen {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 50%;
+}
+.Groupe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: rgb(115, 85, 137);
+}
+
+.name {
+  font-size: x-large;
+  text-decoration: none;
+  color: rgb(255, 254, 254);
+}
+
+@media screen and (max-width: 600px) {
+  .Groupe {
+    flex-direction: column;
+  }
+}
+
+div span {
+  text-align: center;
+}

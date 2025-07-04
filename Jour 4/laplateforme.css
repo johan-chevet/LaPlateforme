@@ -1,0 +1,122 @@
+laplateforme.css body {
+  margin: 0px;
+  font-family: "Arial", sans-serif;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid;
+  border-bottom-color: rgb(46, 163, 242);
+  padding: 20px;
+}
+
+.logo {
+  width: 30vw;
+}
+
+.navbar {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid;
+  border-radius: 5px;
+}
+
+.home-container {
+  display: flex;
+  background-color: #0062ff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  padding: 50px;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.home-image {
+  width: 50%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333333;
+  padding: 20px;
+  padding-top: 80px;
+  align-items: start;
+}
+
+.footer-logo {
+  width: 20vw;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+
+.footer-links b {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-links p {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer .contact {
+  font-weight: bold;
+  border: 2px solid #ccc;
+  padding: 10px 30px;
+}
+
+.dev-container {
+  background-image: url("./img/montage-developer-web.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/*TODO responsive*/
+.dev-container-content {
+  font-size: 24px;
+  color: white;
+  padding: 150px 5%;
+  width: 40%;
+}
+
+.dev-container-content h1 {
+  margin-bottom: 0px;
+}
+.dev-container-content p {
+  line-height: 2;
+}
+
+.dev-container-content .below-h1 {
+  margin: 0px;
+}
