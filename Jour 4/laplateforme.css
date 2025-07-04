@@ -1,4 +1,4 @@
-laplateforme.css body {
+body {
   margin: 0px;
   font-family: "Arial", sans-serif;
 }
@@ -34,9 +34,16 @@ laplateforme.css body {
   border-radius: 5px;
 }
 
+main {
+  background-color: #0062ff;
+  display: flow-root;
+}
+
 .home-container {
   display: flex;
-  background-color: #0062ff;
+  color: white;
+  /* background-color: #0062ff; */
+  /* align-items: flex-start; */
 }
 
 .content {
@@ -44,14 +51,17 @@ laplateforme.css body {
   flex-direction: column;
   justify-content: center;
   color: white;
-  font-size: 32px;
-  padding: 50px;
+  font-size: 22px;
+  margin: 50px auto;
+  padding: 20px;
   width: 50%;
   line-height: 1.5;
 }
 
 .home-image {
-  width: 50%;
+  object-fit: contain;
+  max-width: 50%;
+  align-self: flex-start;
 }
 
 .footer {
@@ -119,4 +129,77 @@ laplateforme.css body {
 
 .dev-container-content .below-h1 {
   margin: 0px;
+}
+
+.main-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: center;
+  margin: 50px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 500px;
+}
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  resize: vertical;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  color: #1e3066;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+.contact-form textarea::placeholder,
+.contact-form input::placeholder {
+  color: #1e3066;
+}
+
+.contact-container button {
+  font-weight: bold;
+  background-color: #fe6b26;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Home Page Responsive */
+@media screen and (max-width: 980px) {
+  /* home main */
+  .home-container {
+    flex-direction: column;
+  }
+  .content {
+    width: 80%;
+    font-size: 18px;
+  }
+  .home-image {
+    max-width: 100%;
+  }
+
+  /* footer */
+  .footer {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  .footer-links {
+    padding: 20px 0px;
+  }
+  .footer-logo {
+    width: 50vw;
+  }
 }
