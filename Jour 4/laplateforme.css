@@ -35,15 +35,13 @@ body {
 }
 
 main {
-  background-color: #0062ff;
   display: flow-root;
 }
 
 .home-container {
   display: flex;
   color: white;
-  /* background-color: #0062ff; */
-  /* align-items: flex-start; */
+  background-color: #0062ff;
 }
 
 .content {
@@ -106,6 +104,7 @@ main {
   padding: 10px 30px;
 }
 
+/* Coding school */
 .dev-container {
   background-image: url("./img/montage-developer-web.webp");
   background-size: cover;
@@ -131,15 +130,42 @@ main {
   margin: 0px;
 }
 
+.formation-info {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.16);
+}
+
+.info-item-container {
+  padding: 0px 50px;
+  position: relative;
+}
+
+.info-item-container img {
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.info-item {
+}
+
+.info-item p {
+  font-weight: 600;
+  color: #666;
+}
+
+/* Contact */
 .main-contact {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #0062ff;
 }
+
 .contact-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   align-items: center;
   margin: 50px;
   background-color: #ffffff;
@@ -147,11 +173,13 @@ main {
   border-radius: 20px;
   width: 500px;
 }
+
 .contact-form {
   display: flex;
   flex-wrap: wrap;
   resize: vertical;
 }
+
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
@@ -175,6 +203,86 @@ main {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* Innovation Lab */
+
+.innovation-lab-container {
+  padding: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.innovation-lab-container h1 {
+  font-size: 4em;
+  margin: 0;
+}
+
+.innovation-lab-container p {
+  width: 50%;
+  font-size: large;
+}
+
+.lab-image-container {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  margin: 0 auto;
+}
+
+.prerequisites-section {
+  padding: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.prerequisites-section h1 {
+  font-size: 48px;
+  border-top: 1px solid black;
+  padding: 20px 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.prerequisites-section .subtitle {
+  font-size: 24px;
+  margin-bottom: 40px;
+  width: 70%;
+}
+
+.prerequisites-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 60px;
+}
+
+.prerequisites-item {
+  border-top: 1px solid black;
+  padding-top: 20px;
+}
+
+.prerequisites-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.prerequisites-item p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.profiles {
+  display: flex;
+}
+
+.profile {
+  /* width: 100%;
+  height: auto; */
+  margin: 0 20px;
+}
+.profile img {
+  width: 100%;
+  height: auto;
 }
 
 /* Home Page Responsive */
@@ -201,5 +309,19 @@ main {
   }
   .footer-logo {
     width: 50vw;
+  }
+
+  /* Innovation lab */
+  .innovation-lab-container p {
+    width: 100%;
+  }
+
+  .prerequisites-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
