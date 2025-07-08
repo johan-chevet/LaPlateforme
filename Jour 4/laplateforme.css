@@ -133,12 +133,14 @@ main {
 .formation-info {
   display: flex;
   justify-content: space-around;
+  /* flex-wrap: wrap; */
   box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.16);
 }
 
 .info-item-container {
   padding: 0px 50px;
   position: relative;
+  margin: 10px;
 }
 
 .info-item-container img {
@@ -147,13 +149,75 @@ main {
   top: 10px;
 }
 
-.info-item {
-  /* //dsad */
-}
-
 .info-item p {
   font-weight: 600;
   color: #666;
+}
+
+.formation-container {
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: wrap; */
+  /* width: 100%; */
+  margin: 20px;
+}
+
+.formation-container h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+  margin: 60px 0;
+}
+
+.formation-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.formation-list-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+  flex: 1 0 0;
+  min-width: 300px;
+  max-width: 400px;
+  transition: transform 400ms ease;
+}
+
+.formation-list-container:hover {
+  transform: scaleX(1.02) scaleY(1.02);
+}
+
+.formation-list-content {
+  margin: 10px;
+  padding: 10px 40px;
+}
+
+.formation-list-container img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  margin: 0 auto;
+}
+
+.formation-list-content h3 {
+  font-size: 27px;
+}
+.formation-list-content p {
+  font-size: large;
+  color: #737373;
+}
+
+.formation-list-container:nth-of-type(1) h3 {
+  color: #d22261;
+}
+.formation-list-container:nth-of-type(2) h3 {
+  color: #1d5eba;
+}
+.formation-list-container:nth-of-type(3) h3 {
+  color: #f4a261;
 }
 
 /* Contact */
@@ -196,7 +260,7 @@ main {
   color: #1e3066;
 }
 
-.contact-container button {
+.plate-btn {
   font-weight: bold;
   background-color: #fe6b26;
   color: white;
@@ -204,7 +268,18 @@ main {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  /* transition-property: width;
+  transition-timing-function: linear;
+  transition-duration: 100ms; */
 }
+
+/* .plate-btn:hover {
+  width: 110px;
+} */
+
+/* .plate-btn:hover:after {
+  content: " >";
+} */
 
 /* Innovation Lab */
 
@@ -324,5 +399,11 @@ main {
   .profiles {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  /* Coding school */
+  .formation-info {
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 }
